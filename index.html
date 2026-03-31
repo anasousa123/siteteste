@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Meu Site</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Explorador Espacial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Meu primeiro site Aluna Ana Laura </h1>
-  <p>Olá! Esse é meu site.</p>
+    <header>
+        <h1>🚀 Explorador Espacial</h1>
+        <p>Descubra planetas incríveis</p>
+    </header>
 
-  <button onclick="clicou()">Clique aqui</button>
+    <section>
+        <h2>🌍 Planeta em Destaque</h2>
+        <img id="planeta" src="https://via.placeholder.com/300/0000ff" alt="Planeta">
+        <br><br>
+        <button onclick="trocarPlaneta()">Trocar Planeta</button>
+    </section>
 
-  <p id="mensagem"></p>
+    <section>
+        <h2>📊 Tabela de Planetas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Planeta</th>
+                    <th>Distância da Terra (milhões km)</th>
+                </tr>
+            </thead>
+            <tbody id="tabela">
+                <tr>
+                    <td>Marte</td>
+                    <td>225</td>
+                </tr>
+                <tr>
+                    <td>Júpiter</td>
+                    <td>778</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <button onclick="adicionarPlaneta()">Adicionar Planeta</button>
+    </section>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
