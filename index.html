@@ -12,36 +12,38 @@
         <p>Descubra planetas incríveis</p>
     </header>
 
-    <section>
-        <h2>🌍 Planeta em Destaque</h2>
-        <img id="planeta" src="https://via.placeholder.com/300/0000ff" alt="Planeta">
-        <br><br>
-        <button onclick="trocarPlaneta()">Trocar Planeta</button>
-    </section>
+    <main>
+        <section class="card">
+            <h2>🌍 Planeta em Destaque</h2>
+            <img id="planeta" src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg">
+            <br>
+            <button onclick="trocarPlaneta()">Trocar Planeta</button>
+        </section>
 
-    <section>
-        <h2>📊 Tabela de Planetas</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Planeta</th>
-                    <th>Distância da Terra (milhões km)</th>
-                </tr>
-            </thead>
-            <tbody id="tabela">
-                <tr>
-                    <td>Marte</td>
-                    <td>225</td>
-                </tr>
-                <tr>
-                    <td>Júpiter</td>
-                    <td>778</td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <button onclick="adicionarPlaneta()">Adicionar Planeta</button>
-    </section>
+        <section class="card">
+            <h2>📊 Tabela de Planetas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Planeta</th>
+                        <th>Distância da Terra (milhões km)</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela">
+                    <tr>
+                        <td>Marte</td>
+                        <td>225</td>
+                    </tr>
+                    <tr>
+                        <td>Júpiter</td>
+                        <td>778</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button onclick="adicionarPlaneta()">Adicionar Planeta</button>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>

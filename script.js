@@ -1,17 +1,17 @@
 const planetas = [
     {
         nome: "Marte",
-        img: "https://via.placeholder.com/300/ff0000",
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg",
         distancia: 225
     },
     {
         nome: "Júpiter",
-        img: "https://via.placeholder.com/300/f0a500",
+        img: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg",
         distancia: 778
     },
     {
         nome: "Saturno",
-        img: "https://via.placeholder.com/300/cccc99",
+        img: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg",
         distancia: 1429
     }
 ];
@@ -25,19 +25,14 @@ function trocarPlaneta() {
 
 function adicionarPlaneta() {
     const tabela = document.getElementById("tabela");
-
     const p = planetas[Math.floor(Math.random() * planetas.length)];
 
     const linha = document.createElement("tr");
 
-    const nome = document.createElement("td");
-    nome.textContent = p.nome;
-
-    const distancia = document.createElement("td");
-    distancia.textContent = p.distancia;
-
-    linha.appendChild(nome);
-    linha.appendChild(distancia);
+    linha.innerHTML = `
+        <td>${p.nome}</td>
+        <td>${p.distancia}</td>
+    `;
 
     tabela.appendChild(linha);
 }
